@@ -16,6 +16,7 @@ export class GreenhouseScene extends Phaser.Scene {
 
   create() {
     this.cameras.main.setBackgroundColor(0x8ea88f);
+  this.scale.on("resize", () => this.scene.restart({ state: this.state }));
 
     const cols = 4;
     const rows = Math.ceil(this.state.plots.length / cols);

@@ -19,7 +19,6 @@ const game = new Phaser.Game({
   },
 });
 
-
 game.scene.start("greenhouse", { state });
 
 const renderHUD = bindUI({
